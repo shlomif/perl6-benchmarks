@@ -12,3 +12,5 @@ $(LOGTXT_0FC): process-0freecells-log/0fc-log.lg.txt.xz
 
 # vim:ft=make
 #
+run: all
+	perl benchmark.pl
