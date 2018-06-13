@@ -30,7 +30,7 @@ my $M = (($E +< 1) - 1);
 
 sub probe($x, $y)
 {
-    return ((($x - $E)**2) + ($y - $E) ** 2 <= $E2);
+    return ($x*$x + $y*$y <= $E2);
 }
 
 my %counts;
@@ -57,4 +57,4 @@ sub split_len($x, $y, $w) {
     return 1 + Len($x, $y, $w2) + Len($xm, $y, $w2) + Len($x, $ym, $w2) + Len($xm, $ym, $w2);
 }
 
-say split_len(0, 0, $M+1);
+say split_len(-$E, -$E, $M+1);
