@@ -55,18 +55,6 @@ def split_len(x, y, w):
 
 
 def main():
-    print(pixel(0, 0))
-    print(pixel(0, M))
-    print(pixel(M, 0))
-    print(pixel(M, M))
-    print(pixel(E, E))
-    print(pixel(E, 0))
-    print(pixel(0, E))
-    print(pixel(E, M))
-    print(pixel(M, E))
-    print(pixel(E+1, M))
-    print(pixel(M, E+1))
-    print(pixel(E-1, 0))
     print(split_len(-E, -E, M+1))
 
 
