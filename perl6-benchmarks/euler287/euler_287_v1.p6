@@ -37,7 +37,7 @@ my %counts;
 
 sub Len($x, $y, $w)
 {
-    say $w, '=', ++%counts{$w};
+    # say $w, '=', ++%counts{$w};
     if $w == 1 {
         return 2;
     }
