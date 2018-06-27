@@ -14,11 +14,19 @@ use warnings;
 use Benchmark qw/ timethese /;
 use Cwd qw/ getcwd /;
 
-my $PWD = getcwd;
+my $PWD    = getcwd;
+my $FILTER = $ENV{FILTER} // '.';
 
 sub _bench
 {
     my ( $DIR, $TESTS ) = @_;
+
+    if ( $DIR !~ /$FILTER/ )
+    {
+        return;
+    }
+
+    print "Benchmarking $DIR\n";
 
     chdir($DIR);
     timethese( 1, $TESTS, );
@@ -26,6 +34,7 @@ sub _bench
 
     return;
 }
+
 _bench(
     "./process-0freecells-log/",
     {
