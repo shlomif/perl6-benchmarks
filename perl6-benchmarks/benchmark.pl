@@ -27,14 +27,22 @@ timethese(
 );
 chdir($PWD);
 
+chdir("./euler189/");
+timethese(
+    1,
+    {
+        'p5' => sub { system( $^X,     "euler_189-2.pl" ); },
+        'p6' => sub { system( "perl6", "euler_189-2.p6" ); },
+    }
+);
+chdir($PWD);
 chdir("./euler287/");
 timethese(
     1,
     {
-        'cpy3' =>
-            sub { system( "python3", "euler_287_v1.py" ); },
-        'pypy' => sub { system( "pypy", "euler_287_v1.py" ); },
-        'p6' => sub { system( "perl6", "euler_287_v1.p6" ); },
+        'cpy3' => sub { system( "python3", "euler_287_v1.py" ); },
+        'pypy' => sub { system( "pypy",    "euler_287_v1.py" ); },
+        'p6'   => sub { system( "perl6",   "euler_287_v1.p6" ); },
     }
 );
 chdir($PWD);
