@@ -19,7 +19,9 @@ my $FILTER = $ENV{FILTER} // '.';
 
 sub _bench
 {
-    my ( $DIR, $TESTS ) = @_;
+    my ( $DIR, $TESTS, $times ) = @_;
+
+    $times //= 1;
 
     if ( $DIR !~ /$FILTER/ )
     {
@@ -29,7 +31,7 @@ sub _bench
     print "Benchmarking $DIR\n";
 
     chdir($DIR);
-    timethese( 1, $TESTS, );
+    timethese( $times, $TESTS, );
     chdir($PWD);
 
     return;
@@ -51,6 +53,15 @@ _bench(
         'p5' => sub { system( $^X,     "euler_189-2.pl" ); },
         'p6' => sub { system( "perl6", "euler_189-2.p6" ); },
     }
+);
+_bench(
+    "./euler220/",
+    {
+        'cpy3' => sub { system( "python3", "220-v1.py" ); },
+        'pypy' => sub { system( "pypy",    "220-v1.py" ); },
+        'p6'   => sub { system( "perl6",   "220-v1.p6" ); },
+    },
+    50
 );
 _bench(
     "./euler287/",
