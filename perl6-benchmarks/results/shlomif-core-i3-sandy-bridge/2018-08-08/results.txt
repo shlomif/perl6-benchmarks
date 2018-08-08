@@ -1,0 +1,355 @@
++ perl6 --version
+This is Rakudo Star version 2018.04.1 built on MoarVM version 2018.04.1
+implementing Perl 6.c.
++ make run
+perl benchmark.pl
+Benchmarking ./process-0freecells-log/
+Benchmark: timing 1 iterations of cpy3, p6, pypy...
+      cpy3:  4 wallclock secs ( 0.00 usr  0.00 sys +  4.27 cusr  0.02 csys =  4.29 CPU) @  0.23/s (n=1)
+            (warning: too few iterations for a reliable count)
+        p6: 79 wallclock secs ( 0.00 usr  0.00 sys + 78.63 cusr  0.12 csys = 78.75 CPU) @  0.01/s (n=1)
+            (warning: too few iterations for a reliable count)
+      pypy:  1 wallclock secs ( 0.00 usr  0.00 sys +  0.82 cusr  0.06 csys =  0.88 CPU) @  1.14/s (n=1)
+            (warning: too few iterations for a reliable count)
+Benchmarking ./euler189/
+Benchmark: timing 1 iterations of p5, p6...
+Count[2] = 24
+24 should be 3*2*2*2 == 24
+Count[2] = 24
+Count[3] = 528
+Count[4] = 31968
+Count[5] = 5332224
+Count[6] = 2450774016
+Count[7] = 3104112826368
+Count[8] = 10834893628237824
+Result[8] = 10834893628237824
+        p5:  3 wallclock secs ( 0.00 usr  0.00 sys +  2.96 cusr  0.05 csys =  3.01 CPU) @  0.33/s (n=1)
+            (warning: too few iterations for a reliable count)
+Count[2] = 24
+24 should be 3*2*2*2 == 24
+Count[2] = 24
+Count[3] = 528
+Count[4] = 31968
+Count[5] = 5332224
+Count[6] = 2450774016
+Count[7] = 3104112826368
+Count[8] = 10834893628237824
+Result[8] = 10834893628237824
+        p6: 81 wallclock secs ( 0.00 usr  0.00 sys + 81.49 cusr  0.46 csys = 81.95 CPU) @  0.01/s (n=1)
+            (warning: too few iterations for a reliable count)
+Benchmarking ./euler220/
+Benchmark: timing 50 iterations of cpy3, p6, pypy...
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+      cpy3:  2 wallclock secs ( 0.00 usr  0.01 sys +  1.59 cusr  0.19 csys =  1.79 CPU) @ 27.93/s (n=50)
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+        p6: 43 wallclock secs ( 0.00 usr  0.01 sys + 57.49 cusr  2.33 csys = 59.83 CPU) @  0.84/s (n=50)
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+cur = 18,16
+cur = 139776,963904
+      pypy:  2 wallclock secs ( 0.00 usr  0.01 sys +  1.64 cusr  0.59 csys =  2.24 CPU) @ 22.32/s (n=50)
+Benchmarking ./euler287/
+Benchmark: timing 1 iterations of cpy3, p6, pypy...
+313135496
+      cpy3: 200 wallclock secs ( 0.00 usr  0.00 sys + 199.79 cusr  0.29 csys = 200.08 CPU) @  0.00/s (n=1)
+            (warning: too few iterations for a reliable count)
+313135496
+        p6: 1518 wallclock secs ( 0.00 usr  0.00 sys + 1517.13 cusr  0.50 csys = 1517.63 CPU) @  0.00/s (n=1)
+            (warning: too few iterations for a reliable count)
+313135496
+      pypy:  5 wallclock secs ( 0.00 usr  0.00 sys +  5.58 cusr  0.03 csys =  5.61 CPU) @  0.18/s (n=1)
+            (warning: too few iterations for a reliable count)
